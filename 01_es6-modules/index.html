@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie form</title>
+
+</head>
+
+<body>
+    <input required="required" type="text" class="movie-title">
+    <input required="required" type="text" class="movie-length">
+    <select name="genre-select" class="select-genre">
+        <option value="-">-</option>
+        <option value="action">Action</option>
+        <option value="drama">Drama</option>
+        <option value="horror">Horror</option>
+    </select>
+    <input type="button" value="create-movie" class="create-movie">
+    <div class="movie-list"></div>
+    <div class="allMoviesLength">
+        <p></p>
+    </div>
+
+
+    <!-- <input type="date" name="date" class="choose-date">
+    <input type="button" value="Create program" class="create-program">
+
+    <div class="programDiv"></div>
+
+    <select name="movie" class="movie-select"></select>
+
+    <select name="program" class="program-movie"></select>
+    <input type="button" value="Add movie to program" class="add-program"> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type="module">
+        import { init } from './js/app.js';
+        document.addEventListener('DOMContentLoaded', function (event) {
+            console.log('DOM fully loaded!');
+            init();
+
+        })
+    </script>
+</body>
+
+</html>
